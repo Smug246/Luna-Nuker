@@ -10,22 +10,6 @@
   Luna Nuker is a basic .py script that allows you to nuke any server that you have admin perms in!
 </p>
 
-<p align="center"> 
-  <kbd>
-<img src="https://ibb.co/99M4n1g"></img>
-  </kbd>
-</p>
-
-
-<h2 align="center">
-  Lunar Nuker was made by
-
-      Smug and Income
-</h2>
-
----
-
-
 
 ## 🐍・ Download Python
 
@@ -47,8 +31,7 @@ and 'paste here 2' to your bot token and discord username
 
 ### 3. Open The LunaNuker.py
 ```Once you have opened the LunaNuker.py you should be presented with a terminal that 
-looks like this 
-https://ibb.co/BgKTsdY
+displays the title (Luna Bot) and the commands that you can use
 
 
-### 4. Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
+< 4. Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
