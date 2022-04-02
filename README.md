@@ -27,16 +27,21 @@ for exact setup for the bot
 When you have done that edit the LunarConfig.py file and replace the 'paste here 1'
 and 'paste here 2' to your bot token and discord username
 ```
-
-### 3. Open The LunaNuker.py
+### 3. Download The Modules
+```
+To download the modules go into the folder directory and type 
+'pip install -r requirements.txt'
+Remove the apostrophes before pressing enter
+```
+### 4. Open The LunaNuker.py
 ```
 Once you have opened the LunaNuker.py you should be presented with a terminal that 
 looks displays the Luna Bot commands
 ```
-
-### 4. Ready To Nuke!
+### 5. Ready To Nuke!
 ```
 You should now be able to nuke the server the bot is in when you type $nuke
-Your Welcome And Enjoy!
 ```
+### 6. Your Welcome And Enjoy!
+
 > Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
