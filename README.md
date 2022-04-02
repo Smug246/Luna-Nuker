@@ -1,2 +1,2 @@
 # LunaNuker
-Basic Discord Python Nuker (obfuscated) 
+Fastest Basic Discord Python Nuker (obfuscated) 
