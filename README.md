@@ -6,10 +6,6 @@
   Luna Nuker is a basic .py script that allows you to nuke any server that you have admin perms in!
 </h2>
 
-<h3 align="center">
-  Lunar Nuker was made by
-      Smug & Income
-</h3>
 
 ## 🐍・ Download Python
 
