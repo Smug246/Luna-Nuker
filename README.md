@@ -36,7 +36,7 @@ Remove the apostrophes before pressing enter
 ### 4. Open The LunaNuker.py
 ```
 Once you have opened the LunaNuker.py you should be presented with a terminal that 
-looks displays the Luna Bot commands
+displays the Luna Bot commands
 ```
 ### 5. Ready To Nuke!
 ```
