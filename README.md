@@ -8,7 +8,7 @@
 
 <h3 align="center">
   Lunar Nuker was made by
-      Smug and Income
+      Smug & Income
 </h3>
 
 ## 🐍・ Download Python
