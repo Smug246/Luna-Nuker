@@ -35,4 +35,9 @@ Once you have opened the LunaNuker.py you should be presented with a terminal th
 looks displays the Luna Bot commands
 ```
 
-> 4. Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
+### 4. Ready To Nuke!
+```
+You should now be able to nuke the server the bot is in when you type $nuke
+Your Welcome And Enjoy!
+```
+> Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
