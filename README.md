@@ -24,13 +24,15 @@ https://www.youtube.com/watch?v=b61kcgfOm_4 <-- Copy this video exactly for setu
 ```
 
 ### 2. Download The Luna Nuker Code 
-```When you have done that edit the LunarConfig.py file and replace the 'paste here 1'
+```
+When you have done that edit the LunarConfig.py file and replace the 'paste here 1'
 and 'paste here 2' to your bot token and discord username
 ```
 
 ### 3. Open The LunaNuker.py
-```Once you have opened the LunaNuker.py you should be presented with a terminal that 
+```
+Once you have opened the LunaNuker.py you should be presented with a terminal that 
 looks displays the Luna Bot commands
 ```
 
-< 4. Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
+> 4. Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
