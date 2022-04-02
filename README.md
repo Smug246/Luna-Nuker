@@ -18,7 +18,8 @@ python v3.10.1 or higher
 
 ### 1. You Need To Create A Bot Application:
 ```
-https://www.youtube.com/watch?v=b61kcgfOm_4 <-- Copy this video exactly for setup
+https://www.youtube.com/watch?v=b61kcgfOm_4  <-- Copy and paste this url into google 
+for exact setup for the bot
 ```
 
 ### 2. Download The Luna Nuker Code 
