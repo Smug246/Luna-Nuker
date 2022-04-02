@@ -1,0 +1,7 @@
+requests
+os
+ctypes
+discord
+random
+colorama
+pystyle
