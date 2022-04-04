@@ -1,5 +1,4 @@
 requests
-os
 ctypes
 discord
 random
