@@ -1,5 +1,4 @@
 requests
-ctypes
 discord
 random
 colorama
