@@ -3,3 +3,9 @@ discord
 random
 colorama
 pystyle
+selenium
+bs4
+PIL-Tools
+pylibcheck
+pyinstaller
+psutil
