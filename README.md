@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">
-  Luna Nuker is a basic .py script that allows you to nuke any server that you have admin perms in!
+  Luna Nuker is a basic tool that allows you to nuke any server that you have admin perms in!
 </h2>
 
 
@@ -45,5 +45,15 @@ You should now be able to nuke the server the bot is in when you type $nuke
 ### 6. Your Welcome, Enjoy!
 This was made for educational purposes only. We do not take responsibility of any actions
 held against you.
+
+## Module Instalation
+
+### 1. Download the code
+
+### 2. Unpack the zip
+
+### 3. Run Installer.bat
+
+### 4. Let it run and after close you should be able to run the python file
 
 > Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
