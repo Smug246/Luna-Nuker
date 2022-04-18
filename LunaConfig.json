@@ -1,4 +1,7 @@
 {
-  "token": "Token here",
-  "Discord": ""
+    "token": "Token here",
+    "Discord": "",
+
+    "Channel_Name": "",
+    "Message": ""
 }
