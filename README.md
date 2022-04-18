@@ -42,9 +42,7 @@ displays the Luna Bot commands
 ```
 You should now be able to nuke the server the bot is in when you type $nuke
 ```
-### 6. DO NOT DELETE THE PNG FILE IF YOU DO THIS THE NUKE COMMAND WON'T WORK!
-
-### 7. Your Welcome, Enjoy!
+### 6. Your Welcome, Enjoy!
 This was made for educational purposes only. We do not take responsibility of any actions
 held against you.
 
