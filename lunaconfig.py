@@ -4,8 +4,8 @@
 # replace "paste here 4" with the name you want the server you nuke to be change to. Example: ez nuke by luna
 # replace "paste here 5" with different names you want to appear on the channels. Example: ["luna nuked you", "faggots", "luna owns you"]
 
-token = "ODMxODUxOTMwMjA0NjM1MTQ3.YHbQew.0g-RMWIzsAAafwXFXG9LIhvxosA"
-username = "500755993374752789"
-bot_status = "ez nuke"
-server_name = "luna nuked you"
-channel_name_list = ["luna nuked you" , "ez nuke" , "luna owns you"]
+token = "paste here 1"
+username = "paste here 2"
+bot_status = "paste here 3"
+server_name = "paste here 4"
+channel_name_list = ["paste here 5" , "paste here 5" , "paste here 5"]
