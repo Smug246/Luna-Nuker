@@ -24,8 +24,8 @@ for exact setup for the bot
 
 ### 2. Download The Luna Nuker Code 
 ```
-When you have done that edit the LunarConfig.py file and replace the 'paste here 1',
-'paste here 2', 'paste here 3', 'paste here 4', 'paste here 5' with ur bot token discordid etc
+Now download Luna Nuker and extract the file. Then open the how to use.txt and 
+that will explain how to edit the config correctly.
 ```
 ### 3. Install The Modules
 ```
@@ -34,7 +34,7 @@ and this will install all the required modules for you
 ```
 ### 4. Open The LunaNuker.py
 ```
-Once you have opened the LunaNuker.py you should be presented with a terminal that 
+Once you have opened the Lunanuker.exe you should be presented with a terminal that 
 displays the Luna Bot commands
 ```
 ### 5. Ready To Nuke!
