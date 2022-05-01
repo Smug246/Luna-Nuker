@@ -1,7 +1,0 @@
-requests
-discord
-random
-colorama
-pystyle
-bs4
-pylibcheck
