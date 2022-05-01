@@ -34,7 +34,7 @@ and this will install all the required modules for you
 ```
 ### 4. Open The LunaNuker.py
 ```
-Once you have opened the Lunanuker.exe you should be presented with a terminal that 
+Once you have opened the Lunanuker.py you should be presented with a terminal that 
 displays the Luna Bot commands
 ```
 ### 5. Ready To Nuke!
