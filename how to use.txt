@@ -6,5 +6,3 @@ Replace "paste here 1" with your bot token.
 Replace "paste here 2" with your discord id. Example: 500755993374752789
 Replace "paste here 3" with your custom bot status. Example: luna's goated!
 Replace "paste here 4" with the name you want the server you nuke to be change to. Example: ez nuke by luna
-Replace "paste here 5" with different names you want to appear on the channels.
-Example: ["luna nuked you", "faggots", "luna owns you" , "suck your mum"]
