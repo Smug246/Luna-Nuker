@@ -4,6 +4,7 @@
 
 <h2 align="center">
   Luna Nuker is a tool that allows you to nuke any server that you have admin perms in!
+  If you skid this give me or addidix credits!
 </h2>
 
 
