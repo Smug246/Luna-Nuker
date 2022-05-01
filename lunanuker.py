@@ -1,3 +1,5 @@
+# Coded with ❤ by Luna's Dev Team
+
 import os
 import discord
 import random
