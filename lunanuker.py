@@ -9,6 +9,8 @@ from discord import Permissions
 from discord.ext.commands import MissingPermissions
 from pystyle import Colorate, Colors
 
+intents = discord.Intents.all()
+intents.members = True
 
 config = r"lunaconfig.json"
 
