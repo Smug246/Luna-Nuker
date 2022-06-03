@@ -45,6 +45,7 @@ def banner():
 
 @client.event
 async def on_ready():
+  await client.change_presence(activity=discord.Game(name=bot_status))
   os.system(f'cls & mode 81,25 & title Luna Nuker - Made by Smug')
   banner() 
 
