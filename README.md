@@ -4,13 +4,18 @@
 
 <h2 align="center">
   Luna Nuker is a tool that allows you to nuke any server that you have admin perms in!
-  If you skid this give me or addidix credits!
 </h2>
 
 <h3 align="center">
 Don't Forget To ⭐ If You Like It!
 </h3>
 
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/Smug246/LunaNuker?color=5c12df&?style=flat-square">
+  <img src="https://img.shields.io/github/last-commit/Smug246/LunaNuker?color=5c12df&?style=flat-square">
+  <img src="https://img.shields.io/github/stars/Smug246/LunaNuker?color=5c12df&label=Stars&style=flat-square">
+  <img src="https://img.shields.io/github/forks/Smug246/LunaNuker?color=5c12df&label=Forks&style=flat-square">
+</p>
 
 ## 🐍・ Download Python
 
