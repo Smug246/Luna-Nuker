@@ -55,4 +55,4 @@ This was made for educational purposes only. We do not take responsibility of an
 held against you.
 
 
-> Don't quite understand how to set it up? [Click me!](https://discord.gg/PskF2YeXnd)
+> Don't quite understand how to set it up? [Click me!](https://discord.gg/HWeThmwy2J)
