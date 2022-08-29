@@ -26,11 +26,11 @@ try:
         messages_to_spam = config["messages_to_spam"]
         invite_link = config["invite_link"]
 except FileNotFoundError:
-    token = input(Fore.WHITE + "Token " + Fore.RESET + Fore.MAGENTA + ">> ")
-    prefix = input(Fore.WHITE + "Prefix " + Fore.RESET + Fore.MAGENTA + ">> ")
-    bot_status = input(Fore.WHITE + "Bot Status " + Fore.RESET + Fore.MAGENTA + ">> ")
-    server_name = input(Fore.WHITE + "Server Name " + Fore.RESET + Fore.MAGENTA + ">> ")
-    invite_link = input(Fore.WHITE + "Invite Link That'll Be Sent " + Fore.RESET + Fore.MAGENTA + ">> ")
+    token = input(white + "Token " + Colors.reset + Colors.purple + ">> ")
+    prefix = input(white + "Prefix " + Colors.reset + Colors.purple + ">> ")
+    bot_status = input(white + "Bot Status " + Colors.reset + Colors.purple + ">> ")
+    server_name = input(white + "Server Name " + Colors.reset + Colors.purple + ">> ")
+    invite_link = input(white + "Invite Link That'll Be Sent " + Colors.reset + Colors.purple + ">> ")
     channel_names = ["Get Clapped","Get Nuked L","Ez Nuke"]
     messages_to_spam = ["If you can't beat them. Join them 😈", "Sorry Not Sorry","Major L"],
     config = {
