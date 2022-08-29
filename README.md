@@ -18,7 +18,22 @@ Don't Forget To ⭐ If You Like It!
   <img src="https://img.shields.io/github/forks/Smug246/LunaNuker?color=5c12df&label=Forks&style=flat-square">
 </p>
 
-## 🐍・ Download Python
+<hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
+
+### Commands:
+- `Help (Displays all commands)`🟢
+- `Nuke (Nukes Server)`🟢
+- `Rename (Renames every member in the server)`🟢
+- `Emoji (Deletes all emojis in the server)`🟢
+- `Massban (Bans all members in the server)`🟢
+- `Spamrole (Creates 50 channels named EzNuke)`🟢
+- `Stop (Stops the nuker and restarts it)🟢
+
+🟢 = Working  | 🟡 = To Do  | 🔴 = Not Working
+
+<hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
+
+## Setup
 
 You'll need [Python](https://www.python.org/downloads/) to start off!
 ```sh-session
@@ -54,5 +69,6 @@ You should now be able to nuke the server the bot is in when you type $nuke
 This was made for educational purposes only. We do not take responsibility of any actions
 held against you.
 
+<hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
 > Don't quite understand how to set it up? [Click me!](https://discord.gg/HWeThmwy2J)
