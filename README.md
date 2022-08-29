@@ -20,7 +20,7 @@ Don't Forget To ⭐ If You Like It!
 
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
-## Commands:
+## Features/Commands:
 - `Help (Displays all commands)`🟢
 - `Nuke (Nukes Server)`🟢
 - `Rename (Renames every member in the server)`🟢
@@ -28,6 +28,7 @@ Don't Forget To ⭐ If You Like It!
 - `Massban (Bans all members in the server)`🟢
 - `Spamrole (Creates 50 channels named EzNuke)`🟢
 - `Stop (Stops the nuker and restarts it)`🟢
+- `Add Proxies`🟡
 
 🟢 = Working  | 🟡 = To Do  | 🔴 = Not Working
 
