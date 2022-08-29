@@ -27,7 +27,7 @@ Don't Forget To ⭐ If You Like It!
 - `Emoji (Deletes all emojis in the server)`🟢
 - `Massban (Bans all members in the server)`🟢
 - `Spamrole (Creates 50 channels named EzNuke)`🟢
-- `Stop (Stops the nuker and restarts it)🟢
+- `Stop (Stops the nuker and restarts it)`🟢
 
 🟢 = Working  | 🟡 = To Do  | 🔴 = Not Working
 
