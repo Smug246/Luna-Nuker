@@ -20,7 +20,7 @@ Don't Forget To ⭐ If You Like It!
 
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
-### Commands:
+## Commands:
 - `Help (Displays all commands)`🟢
 - `Nuke (Nukes Server)`🟢
 - `Rename (Renames every member in the server)`🟢
