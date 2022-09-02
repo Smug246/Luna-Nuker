@@ -1,3 +1,2 @@
 pystyle
-traceback
 discord
