@@ -72,4 +72,4 @@ held against you.
 
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
-> Don't quite understand how to set it up? [Click me!](https://discord.gg/HWeThmwy2J)
+> Still don't quite understand how to set it up? Make an issue or [Click me!](https://discord.gg/qqHM44c55h)
