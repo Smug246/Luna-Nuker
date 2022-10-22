@@ -214,15 +214,6 @@ async def emoji(ctx):
         print(f"{red}{emoji} was not deleted.")
 
 
-@bot.command(aliases=['Stop'])
-async def stop(ctx):
-    System.Title(f'Luna Nuker - Restarting client . . .')
-    await ctx.message.delete()
-    print(f"Restarting '{bot.user.name}'. . .")
-    os.system("main.py")
-    return
-
-
 @bot.command(aliases=['Massban'])
 async def massban(ctx):
     System.Title(f'Luna Nuker - Massbaning . . .')
