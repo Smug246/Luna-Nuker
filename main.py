@@ -119,6 +119,12 @@ async def help(ctx):
     embed.add_field(name='Emoji', value='Deletes all emojis ', inline=False)
     await member.send(embed=embed)
 
+@bot.command(aliases=['stop', 'Stop', 'restart', 'Restart', 'Rest'])
+async def stop(ctx):
+    await ctx.message.delete()
+
+    os.system(fr'\\main.py')
+    os._exit(0)
 
 @bot.command(aliases=['Nuke', 'NUKE', 'nk', 'Nk', 'NK'])
 async def nuke(ctx):
