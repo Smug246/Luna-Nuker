@@ -1,13 +1,13 @@
-import traceback
-import requests
-import discord
-import random
 import json
 import os
+import random
+import traceback
 
+import discord
+import requests
+from discord import Embed, Permissions
 from discord.ext import commands
-from discord import Permissions, Embed
-from pystyle import System, Cursor, Colors, Colorate, Center
+from pystyle import Center, Colorate, Colors, Cursor, System
 
 gray = Colors.gray
 red = Colors.red
@@ -15,7 +15,6 @@ green = Colors.green
 white = Colors.white
 
 
-# Here we check if the config file exists and if it does we load all the data
 if os.path.exists("config.json"):
 
     with open(f"config.json", encoding='utf8') as f:
@@ -28,7 +27,6 @@ if os.path.exists("config.json"):
         messages_to_spam = config["messages_to_spam"]
         invite_link = config["invite_link"]
 
-# If the config file doesn't exist. We will get the needed data from the user via console input and then write it.
 elif not os.path.exists("config.json"):
 
     token = input(white + "Token " + Colors.reset + Colors.purple + ">> ")
@@ -53,7 +51,7 @@ elif not os.path.exists("config.json"):
         invite_link == "https://discord.gg/YAZErTJajf"
 
     with open("config.json", "w") as data:
-        data.write(fr"""
+        data.write(f"""
     {
     "token": {token},
     "prefix": {prefix},
